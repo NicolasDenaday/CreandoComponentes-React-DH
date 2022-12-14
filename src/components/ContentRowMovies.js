@@ -5,10 +5,10 @@ function ContentRowMovies() {
 
 
     let moviesInDB = {
-        // titulo: 'Movies in Data Base',
-        // color: 'primary', 
-        // cifra: 21,
-        // icono: 'clipboard-list'
+         titulo: 'Movies in Data Base',
+         color: 'primary', 
+         cifra: 21,
+         icono: 'clipboard-list'
     }
 
     let totalAwards = {

@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types'; //ES6 
+
 
 function Card(props) {
     console.log(props)
@@ -30,5 +32,12 @@ Card.defaultProps={
         cifra:'0',
         icono:'user-check'
 }
+
+Card.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  color: PropTypes.oneOf(['primary', 'success', 'warning']).isRequired,
+  cifra: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  icono: PropTypes.string
+};
 
 export default Card;
